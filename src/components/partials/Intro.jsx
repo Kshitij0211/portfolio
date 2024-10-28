@@ -51,7 +51,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="mockup-browser bg-primary border shadow-xl shadow-black/50 w-full border-base-300 lg:w-[50%] h-[50%] translate-x-1/3 intersect:translate-x-0 transition duration-700">
+            <div className="mockup-browser bg-primary border shadow-xl shadow-black/50 w-full border-base-300 lg:w-[50%] h-[50%] translate-x-1/3 intersect intersect:translate-x-0 transition duration-700">
                 <div className="mockup-browser-toolbar">
                     <a className="input" href="https://daisyui.com" >https://o-consultation.com</a>
                 </div>
