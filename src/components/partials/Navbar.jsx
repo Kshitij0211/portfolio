@@ -40,10 +40,10 @@ const Navbar = () => {
                     </div>
                     <div className="navbar-center hidden lg:grow lg:justify-center lg:flex">
                         <ul className="menu menu-horizontal px-1 text-2xl gap-x-4">
-                            <li className="group hover:border-primary border-b-2 border-transparent"><a className="hover:bg-transparent" href="#home">Home</a></li>
-                            <li className="group hover:border-primary border-b-2 border-transparent"><a className="hover:bg-transparent" href="#portfolio">Portfolio</a></li>
-                            <li className="group hover:border-primary border-b-2 border-transparent"><a className="hover:bg-transparent" href="#about">Work</a></li>
-                            <li className="group hover:border-primary border-b-2 border-transparent"><a className="hover:bg-transparent" href="#contact">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div className="navbar-end gap-x-4 lg:w-auto">
