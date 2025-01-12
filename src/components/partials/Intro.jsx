@@ -53,7 +53,7 @@ const Intro = () => {
             </div>
             <div className="mockup-browser bg-primary border shadow-xl shadow-black/50 w-full border-base-300 lg:w-[50%] h-[50%] translate-x-1/3 intersect intersect:translate-x-0 transition duration-700">
                 <div className="mockup-browser-toolbar">
-                    <a className="input" href="https://daisyui.com" >https://o-consultation.com</a>
+                    <a className="input" href="https://o-consultation.netlify.app/" >https://o-consultation.com</a>
                 </div>
                 <div className="bg-base-200 flex justify-center">
                     <img src={project} />
