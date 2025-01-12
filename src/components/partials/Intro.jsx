@@ -36,7 +36,7 @@ const Intro = () => {
                 <div className="stats p-2 stats-horizontal shadow-xl w-full bg-base-300 border-t-2 border-primary rounded-t-none lg:w-[75%] lg:ms-0">
                     <div className="stat">
                         <div className="stat-title">Experience</div>
-                        <div className="stat-value text-2xl">3.5</div>
+                        <div className="stat-value text-2xl">4</div>
                         <div className="stat-desc text-xs md:text-base">Years</div>
                     </div>
                     <div className="stat animate-delay-100">
