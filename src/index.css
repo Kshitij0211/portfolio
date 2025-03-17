@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.waterMark {
+  @apply absolute -z-10 h-full flex flex-col justify-center opacity-[0.03] gap-x-2 *:uppercase text-[4rem] md:text-[9rem] lg:text-[10rem] font-semibold;
+}
+
+.carousel-item {
+  @apply relative cursor-pointer overflow-clip w-fit;
+}
+
+.stat {
+  @apply  p-2 flex flex-col justify-around animate-fade-down animate-duration-700 animate-ease-in-out animate-once;
+}
+
+.stat > .stat-title {
+  @apply text-sm md:text-lg;
+}
+
+.sneakPeekOverlay {
+  @apply absolute bottom-0 flex-row justify-around w-[100%] visible h-[40%] translate-y-0 bg-gradient-to-t from-[#1f1f1f] to-black/0 flex items-end ease-in-out transition duration-100 pb-4;
+}
+
+.introIcon {
+  @apply animate-jump animate-once animate-duration-[2000ms] animate-ease-in-out;
+}
+
+.majorProject {
+  @apply bg-base-300 shadow-xl rounded-md md:w-[75%] mx-auto lg:w-auto flex scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-500 ease-in;
+}
+
+.majorProject > .card-body {
+  @apply p-2 w-[75%] text-justify text-xs my-auto md:text-lg;
+}
+
+.majorProject > .cardHeader {
+    @apply rounded-r-md uppercase [writing-mode:vertical-rl] rotate-180 text-center font-bold text-base-300 bg-slate-400 p-2 text-2xl;
+}
