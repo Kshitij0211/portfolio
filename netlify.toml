@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 [[redirects]]
   from = "/*"
   to = "/index.html"
-=======
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
->>>>>>> master
   status = 200
