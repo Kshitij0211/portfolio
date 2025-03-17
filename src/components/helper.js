@@ -35,6 +35,14 @@ export const skills = [{
     imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-mongo-icon-230x512-g17cul1f.png',
     description: 'Mongo DB',
 }, {
+    key: 'mui',
+    imgLocation: 'https://static-00.iconduck.com/assets.00/material-ui-icon-512x406-fhnu85xg.png',
+    description: 'Material UI'
+}, {
+    key: 'ts',
+    imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-512x512-873ff1r9.png',
+    description: 'TypeScript'
+}, {
     key: 'git',
     imgLocation: 'https://static-00.iconduck.com/assets.00/git-icon-512x512-61zfmvxk.png',
     description: 'Git',
@@ -86,4 +94,32 @@ export const projects = [{
     key: "project6",
     imgSrc: 'https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp',
     projectName: 'Project Name'
+<<<<<<< HEAD
 }]
+=======
+}]
+
+import resume from "../assets/file/Resume.pdf"
+
+export const handleDownloadResume = () => {
+    const pdfUrl = resume;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Kshitij_Raj_FullStack_Developer.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    fetch(
+      "https://api.github.com/repos/Kshitij0211/portfolio-stats/dispatches",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/vnd.github.v3+json",
+          Authorization: `Bearer ${import.meta.env.VITE_GH_PAT}`,
+        },
+        body: JSON.stringify({ event_type: "update_downloads" }),
+      }
+    );
+  };
+>>>>>>> master
