@@ -94,9 +94,6 @@ export const projects = [{
     key: "project6",
     imgSrc: 'https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp',
     projectName: 'Project Name'
-<<<<<<< HEAD
-}]
-=======
 }]
 
 import resume from "../assets/file/Resume.pdf"
@@ -122,4 +119,3 @@ export const handleDownloadResume = () => {
       }
     );
   };
->>>>>>> master
