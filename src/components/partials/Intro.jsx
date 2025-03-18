@@ -5,13 +5,15 @@ import { FaInstagram } from "react-icons/fa6";
 import { Observer } from "tailwindcss-intersect";
 import project from "../../assets/img/O-Consultation.png";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { handleDownloadResume } from "../helper";
 
 const Intro = () => {
   Observer.start();
 
   const [stats, setStats] = useState({});
+
+  const [animatedStats, setAnimatedStats] = useState({ visits: 0, downloads: 0 });
 
   const totalYearsOfExp = new Date().getFullYear() - 2021;
 
@@ -20,9 +22,33 @@ const Intro = () => {
       "https://raw.githubusercontent.com/Kshitij0211/portfolio-stats/main/stats.json"
     )
       .then((res) => res.json())
-      .then((data) => setStats(data))
+      .then((data) => {
+        setStats(data);
+        animateNumbers(data.visits, data.downloads);
+      })
       .catch((err) => console.error("Error loading stats:", err));
-  });
+  },[]);
+
+  const animateNumbers = (finalVisits, finalDownloads) => {
+    let visitCount = 0;
+    let downloadCount = 0;
+
+    const interval1 = setInterval(() => {
+      if (visitCount < finalVisits) {
+        setAnimatedStats((prev) => ({ ...prev, visits: ++visitCount }));
+      } else {
+        clearInterval(interval1);
+      }
+    }, 10);
+
+    const interval2 = setInterval(() => {
+      if (downloadCount < finalDownloads) {
+        setAnimatedStats((prev) => ({ ...prev, downloads: ++downloadCount }));
+      } else {
+        clearInterval(interval2);
+      }
+    }, 20);
+  };
 
   useEffect(() => {
     // 🔥 Trigger GitHub Action to Update Visits
@@ -54,10 +80,13 @@ const Intro = () => {
           <span className="">&nbsp;&nbsp;RAJ</span>
         </div>
         <div className="text-xl">
-          I'm a <span className="text-primary">Web Developer</span> with {totalYearsOfExp} years
-          of experience.
+          I'm a <span className="text-primary">Web Developer</span> with{" "}
+          {totalYearsOfExp} years of experience.
         </div>
-        <div className="text-xl shadow-xl bg-base-100/80 btn-lg btn w-fit uppercase px-12 btn-outline rounded-md mt-12 gap-x-2 items-center ring-2 ring-primary border-0 hover:bg-primary" onClick={handleDownloadResume}>
+        <div
+          className="text-xl shadow-xl bg-base-100/80 btn-lg btn w-fit uppercase px-12 btn-outline rounded-md mt-12 gap-x-2 items-center ring-2 ring-primary border-0 hover:bg-primary"
+          onClick={handleDownloadResume}
+        >
           Contact me
           <BiLogoTelegram className="text-2xl" />
         </div>
@@ -80,19 +109,22 @@ const Intro = () => {
           </div>
           <div className="stat animate-delay-100">
             <div className="stat-title">Portfolio Visits</div>
-            <div className="stat-value text-2xl">{stats.visits}</div>
+            <div className="stat-value text-2xl">{stats ? animatedStats.visits : "..."}</div>
             <div className="stat-desc text-xs md:text-base">New Users</div>
           </div>
           <div className="stat animate-delay-200">
             <div className="stat-title">Recruiters Action</div>
-            <div className="stat-value text-2xl">{stats.downloads}</div>
+            <div className="stat-value text-2xl">{stats ? animatedStats.downloads : "..."}</div>
             <div className="stat-desc text-xs md:text-base">
               Resume Downloads
             </div>
           </div>
         </div>
       </div>
-      <div className="mockup-browser bg-primary border shadow-xl shadow-black/50 w-full border-base-300 lg:w-[50%] h-[50%] translate-x-1/3 intersect intersect:translate-x-0 transition duration-700">
+      <div
+        className="animate-[float_3s_ease-in-out_infinite]
+      mockup-browser bg-primary border shadow-xl shadow-black/50 w-full border-base-300 lg:w-[50%] h-[50%] translate-x-1/3 intersect intersect:translate-x-0 transition-transform duration-700"
+      >
         <div className="mockup-browser-toolbar">
           <a className="input" href="https://o-consultation.netlify.app/">
             https://o-consultation.netlify.app

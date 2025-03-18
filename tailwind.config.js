@@ -6,10 +6,18 @@ module.exports = {
     "./public/*.{html}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        float: {
+          "0%" : { transform: "translateY(0)" },
+          "50%" : { transform: "translateY(-10px)" },
+          "100%" : { transform: "translateY(0)"}
+        }
+      },
+    },
   },
   daisyui: {
-    themes: ["light", "dark", "cupcake", "sunset", "cmyk",],
+    themes: ["light", "dark", "corporate", "sunset", "cmyk",],
   },
   plugins: [
     require('daisyui'),

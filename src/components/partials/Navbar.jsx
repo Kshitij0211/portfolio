@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { FaLaptopCode } from "react-icons/fa";
 import { useState } from "react";
-import resume from "../../assets/file/Resume.pdf"
 import { handleDownloadResume } from "../helper";
 
 const Navbar = () => {
@@ -48,7 +47,7 @@ const Navbar = () => {
                 navigate("/");
                 window.scrollTo(0, 0);
               }}
-              className="hidden md:flex text-3xl text-base-content font-semibold cursor-pointer mx-2  flex-row gap-x-2 items-center"
+              className="hidden md:flex text-3xl text-base-content font-semibold cursor-pointer mx-2 z-[999] flex-row gap-x-2 items-center"
             >
               <FaLaptopCode className="opacity-90" />
               <span className="capitalize first-letter:text-3xl text-2xl">
@@ -77,7 +76,7 @@ const Navbar = () => {
               <input
                 type="checkbox"
                 className="theme-controller"
-                value="cmyk"
+                value="corporate"
               />
               <svg
                 className="swap-off h-10 w-10 fill-current"

@@ -1,5 +1,6 @@
 import { PiRocketBold } from "react-icons/pi";
 import { Observer } from "tailwindcss-intersect";
+import MP_P1 from "../../assets/img/MP_P1.png";
 
 const Portfolio = () => {
   Observer.start();
@@ -36,46 +37,38 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="mt-12 lg:mt-0 flex-col gap-4 flex items-stretch">
-          <div className="card card-side majorProject group intersect">
-            <div className="cardHeader">Project 1</div>
+          <div className="card card-side majorProject group intersect cursor-pointer">
+            <div className="cardHeader">O-CONSULTATION</div>
             <div className="card-body">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              <span className="p-2">
+                O-Consultation is a frontend-based telemedicine platform
+                designed to facilitate seamless virtual consultations. Built
+                using React and Tailwind CSS, it provides a responsive and
+                intuitive user interface for both doctors and patients. The
+                platform ensures smooth navigation, modern UI elements, and
+                optimized performance, making remote healthcare interactions
+                more accessible and efficient.
+              </span>
             </div>
-            <figure className="card-actions group">
-              <img
-                className="h-full object-cover"
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                alt="Movie"
-              />
-              <button className="w-fit absolute bottom-3 btn btn-sm md:btn-outline btn-primary text-primary-content block md:hidden group-hover:block text-center md:animate-bounce">
-                View Project
-              </button>
+            <figure className="card-actions group w-[30%]">
+              <img className="object-cover" src={MP_P1} alt="Movie" />
             </figure>
           </div>
-          <div className="card card-side majorProject group intersect">
-            <div className="cardHeader">Project 2</div>
+          <div className="card card-side majorProject group intersect cursor-pointer">
+            <div className="cardHeader">KRANBAN BOARD</div>
             <div className="card-body">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              <span className="p-2">
+                KRanban is a full-stack task management application built with
+                the MERN stack (MongoDB, Express.js, React.js, Node.js). It
+                offers an intuitive Kanban board with drag-and-drop
+                functionality for seamless task organization. Featuring
+                real-time updates, secure authentication, and responsive design,
+                it enhances workflow management, making project tracking
+                efficient and user-friendly.
+              </span>
             </div>
-            <figure className="card-actions group">
-              <img
-                className="h-full"
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                alt="Movie"
-              />
-              <button className="w-fit absolute bottom-3 btn btn-sm md:btn-outline btn-primary text-primary-content block md:hidden group-hover:block text-center md:animate-bounce">
-                View Project
-              </button>
+            <figure className="card-actions group w-[30%]">
+              <img className="object-cover" src={MP_P1} alt="Movie" />
             </figure>
           </div>
         </div>
