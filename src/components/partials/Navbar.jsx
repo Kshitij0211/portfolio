@@ -72,11 +72,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end gap-x-4 lg:w-auto">
-            <label className="swap swap-rotate">
+            <label id="themeSwitch" className="swap swap-rotate">
               <input
                 type="checkbox"
                 className="theme-controller"
                 value="corporate"
+                aria-labelledby="themeSwitch"
               />
               <svg
                 className="swap-off h-10 w-10 fill-current"

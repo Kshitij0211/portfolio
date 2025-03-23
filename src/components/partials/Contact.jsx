@@ -28,18 +28,22 @@ const Contact = () => {
         </aside>
         <nav className="flex lg:flex-row lg:items-end justify-around w-full flex-col items-start gap-y-4">
           <div>
-            <h6 className="footer-title text-2xl">Social</h6>
+            <p className="footer-title text-2xl">Social</p>
             <div className="grid grid-flow-col gap-8 text-5xl *:cursor-pointer *:hover:*:text-primary">
               <Link
+                aria-label="Linked In"
                 to={"https://www.linkedin.com/in/kshitij0211"}
                 target="_blank"
               >
                 <ImLinkedin2 />
               </Link>
-              <Link to={"https://github.com/Kshitij0211"} target="_blank">
+              <Link
+                aria-label="Github"
+                to={"https://github.com/Kshitij0211"} target="_blank">
                 <TbBrandGithubFilled />
               </Link>
               <Link
+                aria-label="Instagram"
                 to={"https://www.instagram.com/_kshitij.raj/"}
                 target="_blank"
               >

@@ -91,13 +91,13 @@ const Intro = () => {
           <BiLogoTelegram className="text-2xl" />
         </div>
         <div className="flex flex-row justify-start gap-x-8 my-8 text-3xl items-center *:cursor-pointer *:hover:*:text-primary *:hover:*:scale-105">
-          <Link to="https://www.linkedin.com/in/kshitij0211/" target="_blank">
+          <Link aria-label="Linked In" to="https://www.linkedin.com/in/kshitij0211/" target="_blank">
             <FaLinkedinIn className="introIcon" />
           </Link>
-          <Link to="https://github.com/Kshitij0211" target="_blank">
+          <Link aria-label="Github" to="https://github.com/Kshitij0211" target="_blank">
             <FiGithub className="introIcon animate-delay-100" />
           </Link>
-          <Link to="https://www.instagram.com/_kshitij.raj/" target="_blank">
+          <Link aria-label="Instagram" to="https://www.instagram.com/_kshitij.raj/" target="_blank">
             <FaInstagram className="introIcon animate-delay-200" />
           </Link>
         </div>
@@ -131,7 +131,7 @@ const Intro = () => {
           </a>
         </div>
         <div className="bg-base-200 flex justify-center">
-          <img src={project} />
+          <img src={project} alt="Major Project Snapshot" />
         </div>
       </div>
     </div>

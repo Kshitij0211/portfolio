@@ -36,8 +36,8 @@ export const RippleBackground = () => {
 };
 
 export const CubicWaveBackground = () => {
-    const rows = Math.floor(window.innerHeight / 150); // Adjust based on cube size
-    const cols = Math.floor(window.innerWidth / 150);
+    const rows = Math.floor(window.innerHeight / 50); // Adjust based on cube size
+    const cols = Math.floor(window.innerWidth / 50);
 
   return (
     <div className="fixed top-0 left-0 w-full h-full overflow-hidden grid place-content-stretch -z-10 pointer-events-none">
@@ -56,7 +56,7 @@ export const CubicWaveBackground = () => {
           return (
             <div
               key={i}
-              className="h-full w-full bg-black/10 rounded-md animate-cubicWave"
+              className={`h-[90%] w-[90%] bg-black/15 rounded-md animate-cubicWave`}
               style={{
                 animationDelay: `${delay}s`,
               }}

@@ -51,7 +51,7 @@ const Portfolio = () => {
               </span>
             </div>
             <figure className="card-actions group w-[30%]">
-              <img className="object-cover" src={MP_P1} alt="Movie" />
+              <img className="object-cover" src={MP_P1} alt="O-Consultation Snapshot" />
             </figure>
           </div>
           <div className="card card-side majorProject group intersect cursor-pointer">
@@ -68,7 +68,7 @@ const Portfolio = () => {
               </span>
             </div>
             <figure className="card-actions group w-[30%]">
-              <img className="object-cover" src={MP_P1} alt="Movie" />
+              <img className="object-cover" src={MP_P1} alt="KRanban Board Snapshot" />
             </figure>
           </div>
         </div>
