@@ -1,6 +1,6 @@
 import { PiRocketBold } from "react-icons/pi";
 import { Observer } from "tailwindcss-intersect";
-import MP_P1 from "../../assets/img/MP_P1.png";
+import MP_P1 from "../../assets/img/MP_P1.webp";
 
 const Portfolio = () => {
   Observer.start();

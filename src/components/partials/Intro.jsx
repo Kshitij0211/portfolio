@@ -3,9 +3,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { Observer } from "tailwindcss-intersect";
-import project from "../../assets/img/O-Consultation.png";
+import project from "../../assets/img/O-Consultation.webp";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { handleDownloadResume } from "../helper";
 
 const Intro = () => {
@@ -131,7 +131,7 @@ const Intro = () => {
           </a>
         </div>
         <div className="bg-base-200 flex justify-center">
-          <img src={project} alt="Major Project Snapshot" />
+          <img loading="eager" src={project} alt="Major Project Snapshot" />
         </div>
       </div>
     </div>

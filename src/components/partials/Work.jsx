@@ -14,8 +14,8 @@ const Work = () => {
                 </div>
                 <div className="relative flex flex-row justify-center lg:gap-x-16 lg:gap-y-10 mt-12 lg:px-12 gap-x-4 gap-y-4 flex-wrap">
                     {
-                        skills.map((tool) =>
-                            <Tool toolImg={tool.imgLocation} toolDesc={tool.description} />
+                        skills.map((tool, key) =>
+                            <Tool key={"skills-"+key} toolImg={tool.imgLocation} toolDesc={tool.description} />
                         )
                     }
                 </div>
@@ -27,8 +27,8 @@ const Work = () => {
                 </div>
                 <div className="relative flex flex-row justify-center lg:gap-x-16 lg:gap-y-10 mt-12 lg:px-12 gap-x-4 gap-y-4 flex-wrap">
                     {
-                        toolsOverview.map((tool) =>
-                            <Tool toolImg={tool.imgLocation} toolDesc={tool.description} />
+                        toolsOverview.map((tool, key) =>
+                            <Tool key={"tools-"+key} toolImg={tool.imgLocation} toolDesc={tool.description} />
                         )
                     }
                 </div>
@@ -41,8 +41,8 @@ const Work = () => {
                 <div className="w-full justify-center my-8">
                     <div className=" md:carousel carousel-center rounded-box hidden w-full">
                         {
-                            projects.map((project) =>
-                                <Project imgSrc={project.imgSrc} projectName={project.projectName} />
+                            projects.map((project, key) =>
+                                <Project key={"sneakPeak-"+key} imgSrc={project.imgSrc} projectName={project.projectName} />
                             )
                         }
                     </div>
@@ -53,8 +53,8 @@ const Work = () => {
                         <div className="artboard artboard-demo phone-1">
                             <div className="carousel rounded-box object-fill h-full">
                                 {
-                                    projects.map((project) =>
-                                        <ProjectMobile imgSrc={project.imgSrc} projectName={project.projectName} />
+                                    projects.map((project, key) =>
+                                        <ProjectMobile key={"sneakPeak-mobile-"+key} imgSrc={project.imgSrc} projectName={project.projectName} />
                                     )
                                 }
                             </div>
