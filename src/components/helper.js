@@ -66,34 +66,17 @@ export const toolsOverview = [{
     description: "Chrome"
 }]
 
+import authPage from '../assets/img/authPage.PNG'
+import pomodoro from '../assets/img/pomodoro.PNG'
+
 export const projects = [{
-    key: "project1",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp',
-    projectName: 'Project Name'
+    key: "authPage",
+    img: authPage,
+    projectName: 'Auth Page'
 },{
-    key: "project2",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp',
-    projectName: 'Project Name'
-},{
-    key: "project3",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp',
-    projectName: 'Project Name'
-},{
-    key: "project4",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp',
-    projectName: 'Project Name'
-},{
-    key: "project5",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp',
-    projectName: 'Project Name'
-},{
-    key: "project6",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp',
-    projectName: 'Project Name'
-},{
-    key: "project6",
-    imgSrc: 'https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp',
-    projectName: 'Project Name'
+    key: "pomodoro",
+    img: pomodoro,
+    projectName: 'Pomodoro Timer'
 }]
 
 import resume from "../assets/file/Resume.pdf"

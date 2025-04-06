@@ -7,7 +7,7 @@ import Contact from "./partials/Contact";
 const Home = () => {
   return (
     <>
-      <CubicWaveBackground />
+      {/* <CubicWaveBackground /> */}
       <Navbar />
       <Intro />
       <Portfolio />

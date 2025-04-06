@@ -42,7 +42,7 @@ const Work = () => {
                     <div className=" md:carousel carousel-center rounded-box hidden w-full">
                         {
                             projects.map((project, key) =>
-                                <Project key={"sneakPeak-"+key} imgSrc={project.imgSrc} projectName={project.projectName} />
+                                <Project key={`sneakPeak-${project.key}`} img={project.img} projectName={project.projectName} />
                             )
                         }
                     </div>
@@ -54,7 +54,7 @@ const Work = () => {
                             <div className="carousel rounded-box object-fill h-full">
                                 {
                                     projects.map((project, key) =>
-                                        <ProjectMobile key={"sneakPeak-mobile-"+key} imgSrc={project.imgSrc} projectName={project.projectName} />
+                                        <ProjectMobile key={`sneakPeak-mobile-${project.key}`} img={project.img} projectName={project.projectName} />
                                     )
                                 }
                             </div>
