@@ -1,8 +1,8 @@
 import { Observer } from "tailwindcss-intersect";
 
-export const Project = ({ projectName, img }) => {
+export const Project = ({ projectName, img, projectUrl }) => {
   return (
-    <div className="carousel-item group">
+    <div className="carousel-item group" onClick={() => window.open(projectUrl)}>
       <div className="w-48">
         <img
           className="object-cover h-full"

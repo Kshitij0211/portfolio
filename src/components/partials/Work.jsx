@@ -42,7 +42,7 @@ const Work = () => {
                     <div className=" md:carousel carousel-center rounded-box hidden w-full">
                         {
                             projects.map((project, key) =>
-                                <Project key={`sneakPeak-${project.key}`} img={project.img} projectName={project.projectName} />
+                                <Project key={`sneakPeak-${project.key}`} img={project.img} projectName={project.projectName} projectUrl={project.url} />
                             )
                         }
                     </div>

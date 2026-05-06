@@ -72,11 +72,13 @@ import pomodoro from '../assets/img/pomodoro.PNG'
 export const projects = [{
     key: "authPage",
     img: authPage,
-    projectName: 'Auth Page'
+    projectName: 'Auth Page',
+    url: 'https://kshitij-project.netlify.app/loginSignUp'
 },{
     key: "pomodoro",
     img: pomodoro,
-    projectName: 'Pomodoro Timer'
+    projectName: 'Pomodoro Timer',
+    url: 'https://kshitij-project.netlify.app/pomodoro'
 }]
 
 import resume from "../assets/file/Resume.pdf"
