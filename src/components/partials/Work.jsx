@@ -15,7 +15,7 @@ const Work = () => {
                 <div className="relative flex flex-row justify-center lg:gap-x-16 lg:gap-y-10 mt-12 lg:px-12 gap-x-4 gap-y-4 flex-wrap">
                     {
                         skills.map((tool, key) =>
-                            <Tool key={"skills-"+key} toolImg={tool.imgLocation} toolDesc={tool.description} />
+                            <Tool key={"skills-"+key} toolImg={`/assets/${tool.imgLocation}.png`} toolDesc={tool.description} />
                         )
                     }
                 </div>
@@ -28,7 +28,7 @@ const Work = () => {
                 <div className="relative flex flex-row justify-center lg:gap-x-16 lg:gap-y-10 mt-12 lg:px-12 gap-x-4 gap-y-4 flex-wrap">
                     {
                         toolsOverview.map((tool, key) =>
-                            <Tool key={"tools-"+key} toolImg={tool.imgLocation} toolDesc={tool.description} />
+                            <Tool key={"tools-"+key} toolImg={`/assets/${tool.imgLocation}.png`} toolDesc={tool.description} />
                         )
                     }
                 </div>

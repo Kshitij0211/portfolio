@@ -1,68 +1,68 @@
 export const skills = [{
     key: "html5",
-    imgLocation: "https://static-00.iconduck.com/assets.00/html5-icon-505x512-zls0uohx.png",
+    imgLocation: "icons/html5",
     description: 'HTML 5',
 }, {
     key: 'css3',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/css3-plain-icon-450x512-vh7r7l9e.png',
+    imgLocation: 'icons/css3',
     description: 'CSS 3',
 }, {
     key: 'js',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/javascript-icon-512x512-34hjwczx.png',
+    imgLocation: 'icons/js',
     description: 'Javascript',
 }, {
     key: 'reactJS',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-reactjs-icon-512x455-5au546uy.png',
+    imgLocation: 'icons/reactJs',
     description: 'React JS',
 }, {
     key: 'tailwindCSS',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-tailwind-icon-512x307-l0anq79h.png',
+    imgLocation: 'icons/tailwindCss',
     description: 'Tailwind CSS',
 }, {
     key: 'bootstrap',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/bootstrap-plain-icon-512x512-fqd6tfaa.png',
+    imgLocation: 'icons/bootstrap',
     description: 'Bootstrap',
 }, {
     key: 'nodeJS',
-    imgLocation: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    imgLocation: "icons/nodeJs",
     description: 'Node JS',
 }, {
     key: 'express',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/express-original-icon-512x298-28hzbsin.png',
+    imgLocation: 'icons/express',
     description: 'Express',
 }, {
     key: 'mongoDB',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-mongo-icon-230x512-g17cul1f.png',
+    imgLocation: 'icons/mongoDB',
     description: 'Mongo DB',
 }, {
     key: 'mui',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/material-ui-icon-512x406-fhnu85xg.png',
+    imgLocation: 'icons/mui',
     description: 'Material UI'
 }, {
     key: 'ts',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-512x512-873ff1r9.png',
+    imgLocation: 'icons/ts',
     description: 'TypeScript'
 }, {
     key: 'git',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/git-icon-512x512-61zfmvxk.png',
+    imgLocation: 'icons/git',
     description: 'Git',
 }, {
     key: 'github',
-    imgLocation: 'https://static-00.iconduck.com/assets.00/github-icon-512x500-7p3xy9uj.png',
+    imgLocation: 'icons/github',
     description: 'GitHub',
 }]
 
 export const toolsOverview = [{
     key: 'vsCode',
-    imgLocation: "https://static-00.iconduck.com/assets.00/vs-code-icon-512x512-ipycpzlh.png",
+    imgLocation: "icons/vsCode",
     description: 'VS Code',
 }, {
     key: 'postman',
-    imgLocation: "https://cdn.iconscout.com/icon/free/png-256/free-postman-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-5-pack-logos-icons-2945092.png?f=webp&w=256",
+    imgLocation: "icons/postman",
     description: "Postman"
 }, {
     key: 'chrome',
-    imgLocation: "https://static-00.iconduck.com/assets.00/chrome-icon-512x512-5ln6wbyk.png",
+    imgLocation: "icons/chrome",
     description: "Chrome"
 }]
 
