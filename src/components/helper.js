@@ -78,7 +78,7 @@ export const projects = [{
     key: "pomodoro",
     img: pomodoro,
     projectName: 'Pomodoro Timer',
-    url: 'https://kshitij-project.netlify.app/pomodoro'
+    url: 'https://kshitij-project.netlify.app/pomodoroTimer'
 }]
 
 import resume from "../assets/file/Resume.pdf"
